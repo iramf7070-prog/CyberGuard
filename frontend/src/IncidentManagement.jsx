@@ -12,7 +12,7 @@ function IncidentManagement({ filter = 'all' }) {
   const fetchIncidents = async () => {
     try {
       const response = await fetch(
-        'http://localhost:5000/api/incidents'
+        'https://cyberguard-backend-xybt.onrender.com/api/incidents'
       )
 
       if (!response.ok) {
@@ -38,7 +38,7 @@ function IncidentManagement({ filter = 'all' }) {
       setError('')
 
       const response = await fetch(
-        `http://localhost:5000/api/incidents/${id}/status`,
+        `https://cyberguard-backend-xybt.onrender.com/api/incidents/${id}/status`,
         {
           method: 'PATCH',
           headers: {

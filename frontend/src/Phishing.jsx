@@ -16,7 +16,7 @@ function Phishing() {
 
     try {
       const response = await fetch(
-        'http://localhost:5000/api/analyze/phishing',
+        'https://cyberguard-backend-xybt.onrender.com/api/analyze/phishing',
         {
           method: 'POST',
           headers: {

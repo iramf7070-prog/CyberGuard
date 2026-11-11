@@ -12,7 +12,7 @@ const [selectedDate, setSelectedDate] = useState('')
     const fetchReports = async () => {
       try {
         const response = await fetch(
-          'http://localhost:5000/api/reports'
+          'https://cyberguard-backend-xybt.onrender.com/api/reports'
         )
 
         if (!response.ok) {

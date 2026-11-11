@@ -28,7 +28,7 @@ function Network() {
 
     try {
       const response = await fetch(
-        'http://localhost:5000/api/analyze/network',
+        'https://cyberguard-backend-xybt.onrender.com/api/analyze/network',
         {
           method: 'POST',
           headers: {

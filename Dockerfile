@@ -3,7 +3,7 @@ FROM python:3.12-slim
 
 RUN apt-get update && apt-get install -y nodejs npm && rm -rf /var/lib/apt/lists/*
 
-WORKDIR /app
+WORKDIR /app 
 
 COPY ml-model/requirements.txt ./ml-model/requirements.txt
 

@@ -9,7 +9,7 @@ function ThreatActivityTrend() {
     const fetchIncidents = async () => {
       try {
         const response = await fetch(
-          'http://localhost:5000/api/incidents'
+          'https://cyberguard-backend-xybt.onrender.com/api/incidents'
         )
 
         if (!response.ok) {

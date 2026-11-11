@@ -22,7 +22,7 @@ function App() {
   const fetchDashboard = async () => {
     try {
       const response = await fetch(
-        'http://localhost:5000/api/dashboard'
+        'https://cyberguard-backend-xybt.onrender.com/api/dashboard'
       )
 
       if (!response.ok) {

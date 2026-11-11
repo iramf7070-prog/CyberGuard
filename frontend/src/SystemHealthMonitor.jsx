@@ -9,7 +9,7 @@ function SystemHealthMonitor() {
     const fetchHealth = async () => {
       try {
         const response = await fetch(
-          'http://localhost:5000/api/health'
+          'https://cyberguard-backend-xybt.onrender.com/api/health'
         )
 
         if (!response.ok) {

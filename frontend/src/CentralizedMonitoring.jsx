@@ -20,8 +20,8 @@ const fetchMonitoringData = async (isManual = false) => {
 
   try {
     const [dashboardResponse, incidentResponse] = await Promise.all([
-      fetch('http://localhost:5000/api/dashboard'),
-      fetch('http://localhost:5000/api/incidents')
+      fetch('https://cyberguard-backend-xybt.onrender.com/api/dashboard'),
+      fetch('https://cyberguard-backend-xybt.onrender.com/api/incidents')
     ])
 
     if (!dashboardResponse.ok || !incidentResponse.ok) {
@@ -49,7 +49,7 @@ const fetchMonitoringData = async (isManual = false) => {
   useEffect(() => {
     fetchMonitoringData()
 
-    const socket = io('http://localhost:5000')
+    const socket = io('https://cyberguard-backend-xybt.onrender.com')
 
     socket.on('newThreat', (threat) => {
   setAlerts((previousAlerts) => [
